@@ -11,7 +11,7 @@ describe('findItemsOver20 function', function(){
             {'name' : 'bananas', 'qty' : 27}
             ])
     })
-    it('Should find and return ZERO Items that are over 20', function(){  
+    it('Should return an empty array if there are no Items that are over 20', function(){  
         assert.deepEqual(findItemsOver20([
                 {'name' : 'apples', 'qty' : 0},
                 {'name' : 'pears', 'qty' : 7},

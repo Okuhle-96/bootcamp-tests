@@ -1,5 +1,5 @@
 describe('Greet function', function(){
-    it('I should greet Okuhle', function(){
+    it('Should greet Okuhle', function(){
         assert.equal('Hello, Okuhle', greet('Okuhle'))
     })
     it('Should greet even when its written in CAPSLOCK', function(){

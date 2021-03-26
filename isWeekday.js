@@ -1,5 +1,5 @@
 function isWeekday(day)
   {
-  return day.startsWith('Mon');
+  return !day.startsWith('S');
     
   }
