@@ -1,5 +1,8 @@
 function greet(name)
 { 
+  if (typeof(name) === "number") {
+    return "numbers not allowed";
+  }
   return "Hello, " + name;
 }
 

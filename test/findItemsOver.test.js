@@ -11,7 +11,7 @@ describe('findItemsOver function', function(){
             {'name' : 'bananas', 'qty' : 27}
             ])
     })
-    it('Should find Items over the threshold that is 10', function(){  
+    it('Should find and return items over 10', function(){  
         assert.deepEqual(findItemsOver([
                 {'name' : 'apples', 'qty' : 10},
                 {'name' : 'pears', 'qty' : 37},
@@ -24,4 +24,17 @@ describe('findItemsOver function', function(){
             {'name' : 'bananas', 'qty' : 27}
             ])
         })
+    
+        it('Should find and return items over 40', function(){  
+            assert.deepEqual(findItemsOver([
+                    {'name' : 'apples', 'qty' : 10},
+                    {'name' : 'pears', 'qty' : 37},
+                    {'name': 'bananas', 'qty' : 27},
+                    {'name': 'apples', 'qty' : 3}
+                ], 40),
+    
+                [
+                   
+                ])
+            })
 })
